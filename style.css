@@ -1,0 +1,98 @@
+/* reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.page,
+.card,
+.card__content {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.page {
+	width: 100%;
+	min-height: 100vh;
+	justify-content: flex-start;
+	padding: 10px 40px;
+	gap: 40px;
+	background-color: hsl(212, 45%, 89%);
+	font-size: 15px;
+}
+
+.page,
+.card__title,
+.footer {
+	font-family: "Outfit", sans-serif;
+	text-align: center;
+	color: hsl(218, 44%, 22%);
+}
+
+.card {
+	width: 100%;
+	max-width: 300px;
+
+	height: auto;
+	padding: 15px;
+	gap: 24px;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 20px;
+	box-shadow: 0 0 1px hsla(0, 0%, 78%, 0.9);
+}
+
+.card__qr-code {
+	max-width: 100%;
+	border-radius: 8px;
+}
+
+.card__content {
+	gap: 16px;
+	padding: 0 5px 25px;
+	width: 100%;
+}
+
+.card__title {
+	color: hsl(218, 44%, 22%);
+	font-size: 21px;
+	line-height: 1.4;
+	font-weight: 700;
+}
+
+.card__paragraph {
+	color: hsl(220, 15%, 55%);
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 400;
+}
+
+.footer__link {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+	.page {
+		padding: 20px 80px;
+		gap: 80px;
+		min-height: 100vh;
+	}
+
+	.card {
+		max-width: 300px;
+		padding: 15px;
+	}
+
+	.card__content {
+		width: 90%;
+		padding-bottom: 20px;
+	}
+
+	.card__title {
+		font-size: 20px;
+		line-height: 1.4;
+	}
+}
